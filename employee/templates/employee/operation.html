@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form action="opecode" method="post">
+{% csrf_token %}
+<input type="text" name="txtnum1" placeholder="Enter First Number" value="{{a}}" />
+<br><br>
+<input type="text" name="txtnum2" placeholder="Enter Second Number" value="{{b}}" />
+<br><br>
+<input type="submit" name="btnadd" value="+" />
+<br><br>
+<input type="submit" name="btnsub" value="-" />
+<br><br>
+<input type="submit" name="btnmult" value="*" />
+<br><br>
+<input type="submit" name="btndiv" value="/" />
+</form>
+
+{{key}}
+</body>
+</html>
